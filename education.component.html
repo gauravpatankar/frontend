@@ -1,0 +1,37 @@
+<div class="page-header">
+    <h3 class="page-title">
+        <i class="mdi mdi-book-open-page-variant mdi-24px"></i> Education
+
+    </h3>
+
+</div>
+<div class="row">
+    <div class="col">
+        <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>Pune</button>
+                <button ngbDropdownItem>Bangalore</button>
+                <button ngbDropdownItem>Nashik</button>
+                <button ngbDropdownItem>Nagpur</button>
+                <button ngbDropdownItem>Coimbtore</button>
+                <button ngbDropdownItem>Ratnagiri</button>
+                <button ngbDropdownItem>Amravati</button>
+                <button ngbDropdownItem>Dhule</button>
+                <button ngbDropdownItem>Beed</button>
+                <button ngbDropdownItem>Buldhana</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-lg-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Bar chart</h4>
+                <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [colors]="barChartColors" [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
