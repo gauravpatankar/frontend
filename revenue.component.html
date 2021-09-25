@@ -1,0 +1,16 @@
+<div class="page-header">
+    <h3 class="page-title">
+        <i class="mdi mdi-bank mdi-24px menu-icon"></i> Revenue
+    </h3>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-6 grid-margin grid-margin-lg-0 stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" style="text-align: center;">Pie chart</h4>
+                <canvas baseChart [chartType]="'pie'" [datasets]="doughnutPieChartData" [labels]="doughnutPieChartLabels" [options]="doughnutPieChartOptions" [colors]="doughnutPieChartColors"></canvas>
+            </div>
+        </div>
+    </div>
